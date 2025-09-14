@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tmux-keylog"
+version = "0.1.0"
+description = "Logs keys onto the TMUX status pane for asciinema casts"
+readme = "README.md"
+authors = [
+    {name = "Kovacsis Robert", email = "kovirobi@gmail.com"},
+]
+requires-python = ">=3.8"
+dependencies = ["pynput>=1"]
+
+[project.scripts]
+tkl = "tmux_keylog.tkl:main"
+
+[project.urls]
+Homepage = "https://github.com/KoviRobi/tmux-keylog.git"
+Repository = "https://github.com/KoviRob/tmux-keylog.git"
